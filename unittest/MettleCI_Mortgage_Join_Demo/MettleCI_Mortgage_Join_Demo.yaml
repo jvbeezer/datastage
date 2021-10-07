@@ -1,0 +1,24 @@
+---
+given:
+- stage: "CloudObjectStorage_Mortgage_Property"
+  link: "mortgage_property"
+  path: "CloudObjectStorage_Mortgage_Property-mortgage_property.csv"
+- stage: "Azure_Storage_Mortgage_Customer"
+  link: "mortgage_customer"
+  path: "Azure_Storage_Mortgage_Customer-mortgage_customer.csv"
+- stage: "Morgage_Default_CSV"
+  link: "mortgage_default"
+  path: "Morgage_Default_CSV-mortgage_default.csv"
+- stage: "Salesforce_Geo_Data"
+  link: "GeoData"
+  path: "Salesforce_Geo_Data-GeoData.csv"
+when:
+  job: "MettleCI_Mortgage_Join_Demo"
+  controller: null
+  parameters: {}
+then:
+- stage: "Output"
+  link: "Output"
+  path: "Output-Output.csv"
+  cluster: null
+  ignore: null

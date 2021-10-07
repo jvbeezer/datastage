@@ -1,0 +1,4 @@
+# Continuous Integration settings
+datastage.engine.host=UREASE1.FYRE.IBM.COM
+datastage.dataset.dir=/opt/IBM/InformationServer/Server/Datasets
+datastage.scratch.dir=/opt/IBM/InformationServer/Server/Scratch

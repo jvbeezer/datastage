@@ -1,0 +1,15 @@
+---
+given:
+- stage: "MORTGAGE_PROPERTY"
+  link: "mortgage_property"
+  path: "MORTGAGE_PROPERTY-mortgage_property.csv"
+when:
+  job: "Mortgage_Property_IBM_COS_Load"
+  controller: null
+  parameters: {}
+then:
+- stage: "CloudObjectStorage_Mortgage_Property"
+  link: "mortgage_property"
+  path: "CloudObjectStorage_Mortgage_Property-mortgage_property.csv"
+  cluster: null
+  ignore: null

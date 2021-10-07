@@ -1,0 +1,23 @@
+---
+given:
+- stage: "DataVirtualization"
+  link: "dataIn"
+  path: "DataVirtualization-dataIn.csv"
+- stage: "REST_Addresses_Master"
+  link: "Address_references"
+  path: "REST_Addresses_Master-Address_references.csv"
+when:
+  job: "Investigate_addresses_to_add_province_information_textfile"
+  controller: null
+  parameters: {}
+then:
+- stage: "Investigate_Results"
+  link: "InvestigateOut"
+  path: "Investigate_Results-InvestigateOut.csv"
+  cluster: null
+  ignore: null
+- stage: "Enhanced_Addresses"
+  link: "Matched"
+  path: "Enhanced_Addresses-Matched.csv"
+  cluster: null
+  ignore: null

@@ -1,0 +1,10 @@
+"City__c|ustring?(20)","Code__c|dfloat","Latitude__Latitude__s|dfloat?","Latitude__Longitude__s|dfloat?"
+"New York City",101.0,40.73061,-73.935242
+Chicago,111.0,41.881832,-87.623177
+Portland,121.0,45.523064,-122.676483
+Dallas,131.0,32.779167,-96.808891
+Boston,100.0,42.361145,-71.057083
+"San Francisco",110.0,37.773972,-122.431297
+"San Jose",120.0,12.355346,121.060509
+Austin,130.0,30.266666,-97.73333
+Seattle,391.0,47.608013,-122.335167
